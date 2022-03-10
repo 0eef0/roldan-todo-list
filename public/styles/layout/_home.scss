@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+  text-shadow: $neon-text-shadow;
+}
+form#taskForm {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  box-shadow: $neon-text-shadow;
+  padding: 1rem;
+  input,
+  select {
+    display: block;
+    width: 90%;
+    background-color: transparent;
+    color: inherit;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    border: $border-white;
+    option {
+      color: $dark-background;
+    }
+  }
+  select {
+    width: calc(90% + 1rem);
+  }
+  button {
+    display: block;
+    width: 80%;
+    background-color: transparent;
+    padding: 1rem;
+    color: inherit;
+    margin: 0 auto;
+    outline: none;
+    border: $border-white;
+    font-size: 1.5rem;
+  }
+}
+
+div.task {
+  width: 75%;
+  margin: 3rem auto;
+  box-shadow: $neon-text-shadow;
+  padding: 1rem;
+  h2 {
+    text-transform: capitalize;
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  button {
+    display: block;
+    width: 80%;
+    background-color: transparent;
+    padding: 1rem;
+    color: inherit;
+    margin: 0 auto;
+    outline: none;
+    border: $border-white;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <title>Guess the Day!</title>
+</head>
+<body>
+    <div id="orientMsg">
+        <h1>Please Rotate Your Screen</h1>
+    </div>
+    <h1>To Do List</h1>
+    <form id="taskForm">
+        <label for="taskName"><h2>Task</h2></label>
+        <input type="text" id="taskName" required>
+        <label for="taskDueDate"><h2>Due Date</h2></label>
+        <input type="date" id="taskDueDate" required>
+        <label for="taskDueTime"><h2>Due Time</h2></label>
+        <input type="time" id="taskDueTime" required>
+        <label for="taskSubject"><h2>Subject</h2></label>
+        <select id="taskSubject" required>
+            <option value="English">English</option>
+            <option value="Government">Government</option>
+            <option value="Calculus">Calculus</option>
+            <option value="West-MEC">West-MEC</option>
+            <option value="FBLA">FBLA</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br><br><hr>
+    <div id="tasks">
+        <div class="task">
+            <h2>Stay Cool</h2>
+            <h3>Life</h3>
+            <h3>Due: When I'm Dead</h3>
+            <button onclick="completeTask(id)">Complete</button>
+        </div>
+    </div>
+
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
