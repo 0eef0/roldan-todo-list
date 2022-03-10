@@ -42,6 +42,7 @@ const addTask = async () => {
             dueTime: taskTimeDOM.value,
             subject: taskSubjectDOM.value
         }
+        console.log(task);
         await axios.post(url, task);
         taskFormDOM.reset();
         getAllTasks();
