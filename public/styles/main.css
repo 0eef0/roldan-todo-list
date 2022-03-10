@@ -388,6 +388,9 @@ form#taskForm {
   box-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
   padding: 1rem;
 }
+form#taskForm h2 {
+  margin: 0.5rem 0;
+}
 form#taskForm input {
   height: 1.5rem;
 }

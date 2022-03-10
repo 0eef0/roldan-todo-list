@@ -8,6 +8,9 @@ form#taskForm {
   margin: 0 auto;
   box-shadow: $neon-text-shadow;
   padding: 1rem;
+  h2 {
+    margin: 0.5rem 0;
+  }
   input {
     height: 1.5rem;
   }
