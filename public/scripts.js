@@ -6,6 +6,19 @@ const taskSubjectDOM = document.getElementById('taskSubject');
 const tasksDOM = document.getElementById('tasks');
 const url = '/api/v1/tasks';
 
+const schedule = [
+    'Buried Cities and Lost Tribes',
+    'Intro to Astronomy',
+    'ASU Experience',
+    'Principles of Programming',
+    'Introduction to Engineering',
+    'Calculus for Engineers'
+];
+for(let course of schedule) {
+    taskSubjectDOM.innerHTML += `<option value="${course}">${course}</option>`;
+}
+taskSubjectDOM.innerHTML += `<option value="Other">Other</option>`;
+
 const getAllTasks = async () => {
     try {
         const { data: { task } } = await axios.get(url);
