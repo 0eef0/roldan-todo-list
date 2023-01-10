@@ -7,12 +7,11 @@ const tasksDOM = document.getElementById('tasks');
 const url = '/api/v1/tasks';
 
 const schedule = [
-    'Buried Cities and Lost Tribes',
-    'Intro to Astronomy',
-    'ASU Experience',
-    'Principles of Programming',
-    'Introduction to Engineering',
-    'Calculus for Engineers'
+    'CSE 205',
+    'CSE 120',
+    'MAT 243',
+    'MAT 343',
+    'PHY 101'
 ];
 for(let course of schedule) {
     taskSubjectDOM.innerHTML += `<option value="${course}">${course}</option>`;
